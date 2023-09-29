@@ -1,6 +1,10 @@
 public class searchInRotatedarr {
     public static int Search(int arr[],int target,int si ,int ei){
         int mid = si +(ei-si)/2;
+        //base case 
+        if(si>ei){
+            return -1;
+        }
         //case found
         if(arr[mid]==target){
             return mid;
