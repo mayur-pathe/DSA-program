@@ -27,5 +27,18 @@ public class Operations {
         //contains element or not 
         System.out.println(list.contains(5));
         System.out.println(list.contains(11));
+
+        //length of list
+        System.out.println(list.size());
+        for(int i=0;i<list.size();i++){
+            System.out.print(list.get(i)+" ");
+        }
+        System.out.println();
+
+        //print reverse list
+        for(int i=list.size()-1;i>=0;i--){
+            System.out.print(list.get(i)+" ");
+        }
+        System.out.println();
     }
 }
